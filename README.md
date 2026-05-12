@@ -1,25 +1,22 @@
-# 🛒 ETicaretProjesi - ASP.NET Core MVC E-Ticaret Uygulaması
+# 🛒 ASP.NET Core MVC E-Ticaret Projesi
 
-Bu proje, modern web teknolojileri kullanılarak geliştirilmiş temel bir e-ticaret uygulamasıdır. Proje, **ASP.NET Core MVC** mimarisi kullanılarak hazırlanmış olup ürün listeleme ve web tabanlı kullanıcı arayüzü yönetimini içermektedir.
-
-Amaç; MVC mimarisini, controller yapısını, Razor View kullanımını ve ASP.NET Core web geliştirme mantığını uygulamalı olarak öğrenmektir.
+Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş basit bir e-ticaret uygulamasıdır. Amaç, MVC yapısını öğrenmek ve ürün listeleme mantığını pratik olarak uygulamaktır.
 
 ---
 
 # 📝 Proje Hakkında
 
-ETicaretProjesi, kullanıcıların ürünleri görüntüleyebileceği temel bir e-ticaret altyapısı sunmaktadır.
+Bu uygulamada ürünler dinamik olarak bir liste içerisinde tanımlanmış ve kullanıcıya web arayüzü üzerinden sunulmuştur.
 
-Projede:
+Proje kapsamında:
 
-- MVC mimarisi
-- Controller yönetimi
-- Razor View yapısı
-- Model kullanımı
-- Bootstrap tabanlı responsive tasarım
-- Dinamik sayfa yönetimi
+- ASP.NET Core MVC yapısı
+- Controller mantığı
+- View (Razor) kullanımı
+- Model yapısı
+- Statik ürün listeleme (in-memory data)
 
-gibi modern ASP.NET Core geliştirme teknikleri kullanılmıştır.
+kullanılmıştır.
 
 ---
 
@@ -30,9 +27,9 @@ gibi modern ASP.NET Core geliştirme teknikleri kullanılmıştır.
 | Dil | C# |
 | Framework | ASP.NET Core MVC |
 | Mimari | MVC (Model - View - Controller) |
-| Front-End | HTML5, CSS3, Bootstrap |
+| Veritabanı | ❌ Yok (in-memory liste kullanıldı) |
+| Frontend | HTML, CSS, Bootstrap |
 | IDE | Visual Studio 2022 |
-| Platform | .NET |
 
 ---
 
@@ -40,110 +37,71 @@ gibi modern ASP.NET Core geliştirme teknikleri kullanılmıştır.
 
 - ASP.NET Core MVC
 - C#
-- Razor Pages
+- Razor Views
 - Bootstrap
-- HTML5
-- CSS3
-- JavaScript
+- HTML5 / CSS3
 - MVC Pattern
 
 ---
 
-# 📋 Temel Özellikler
-
-## ✅ Ürün Listeleme Sistemi
-- Dinamik ürün görüntüleme
-- Ürün sayfası yönetimi
-- MVC tabanlı veri akışı
-
-## ✅ Controller Yapısı
-- HomeController
-- ProductController
-- Sayfa yönlendirme işlemleri
-
-## ✅ Razor View Kullanımı
-- Dinamik View yapıları
-- Layout sistemi
-- Partial yapılar
-
-## ✅ Responsive Arayüz
-- Bootstrap destekli modern tasarım
-- Mobil uyumlu yapı
-- Kullanıcı dostu arayüz
-
----
-
-# 🛠️ Kurulum ve Çalıştırma
-
-## 1️⃣ Projeyi İndirin
+# 📦 Proje Yapısı
 
 ```bash
-git clone <repo-link>
-```
-
-veya ZIP olarak indirip çıkarın.
-
----
-
-## 2️⃣ Visual Studio ile Açın
-
-`ETicaretProjesi.sln` dosyasını Visual Studio üzerinden açın.
-
----
-
-## 3️⃣ Projeyi Çalıştırın
-
-Visual Studio içerisinde:
-
-```bash
-F5
-```
-
-tuşuna basarak projeyi çalıştırabilirsiniz.
-
----
-
-# 📂 Proje Yapısı
-
-```bash
-ETicaret-master/
+ETicaretProjesi/
 │
-├── ETicaretProjesi.sln
+├── Controllers/
+│   ├── HomeController.cs
+│   └── ProductController.cs
 │
-└── ETicaretProjesi/
-    │
-    ├── Controllers/
-    │   ├── HomeController.cs
-    │   └── ProductController.cs
-    │
-    ├── Models/
-    │   ├── Product.cs
-    │   └── ErrorViewModel.cs
-    │
-    ├── Views/
-    │   ├── Home/
-    │   ├── Product/
-    │   └── Shared/
-    │
-    ├── wwwroot/
-    │   ├── css/
-    │   ├── js/
-    │   └── lib/
-    │
-    ├── Program.cs
-    ├── appsettings.json
-    └── ETicaretProjesi.csproj
+├── Models/
+│   ├── Product.cs
+│   └── ErrorViewModel.cs
+│
+├── Views/
+│   ├── Home/
+│   │   ├── Index.cshtml
+│   │   └── Privacy.cshtml
+│   │
+│   ├── Product/
+│   │   └── Index.cshtml
+│   │
+│   └── Shared/
+│       ├── _Layout.cshtml
+│       └── Error.cshtml
+│
+├── wwwroot/
+│   ├── css/
+│   ├── js/
+│   └── lib/
+│
+├── Program.cs
+├── appsettings.json
+└── ETicaretProjesi.csproj
 ```
 
-| Dosya | Açıklama |
-|---|---|
-| `HomeController.cs` | Ana sayfa işlemleri |
-| `ProductController.cs` | Ürün yönetim işlemleri |
-| `Product.cs` | Ürün modeli |
-| `Views/` | Razor View sayfaları |
-| `wwwroot/` | CSS, JS ve statik dosyalar |
-| `Program.cs` | Uygulama başlangıç yapılandırması |
-| `appsettings.json` | Uygulama ayarları |
+---
+
+# 📌 Önemli Dosyalar
+
+## 🧠 ProductController.cs
+Ürünleri listeleyen ve View’a gönderen controller yapısı.
+
+- Ürünler manuel olarak `List<Product>` içinde tanımlanmıştır.
+- Veritabanı kullanılmamıştır.
+
+## 🏠 HomeController.cs
+- Ana sayfa (Index)
+- Privacy sayfası
+- Error sayfası yönetimi
+
+## 📦 Product.cs
+Ürün modelini temsil eder:
+
+- Id
+- Name
+- Price
+- ImageUrl
+- Description
 
 ---
 
@@ -151,22 +109,27 @@ ETicaret-master/
 
 Bu proje sayesinde:
 
-- ASP.NET Core MVC mimarisi öğrenilir.
-- Controller ve View ilişkisi anlaşılır.
-- Razor syntax kullanımı uygulanır.
-- Web tabanlı proje geliştirme pratiği kazanılır.
-- Responsive e-ticaret arayüzü geliştirilir.
+- MVC mantığı öğrenilir
+- Controller → View veri aktarımı anlaşılır
+- Model yapısı pratik edilir
+- ASP.NET Core temel seviyede kavranır
+- Basit e-ticaret ürün listeleme sistemi geliştirilir
+
+---
+
+# ⚠️ Not
+
+Bu projede **veritabanı kullanılmamaktadır.**  
+Ürün verileri doğrudan `ProductController` içerisinde sabit olarak tanımlanmıştır.
 
 ---
 
 # 📜 Lisans
 
-Bu proje **MIT License** ile lisanslanmıştır.
-
-Detaylı bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
+Bu proje MIT License ile lisanslanmıştır.
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Geliştirici
 
 Şilan Pehlivan
