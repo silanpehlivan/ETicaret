@@ -124,12 +124,10 @@ Bu projede **veritabanı kullanılmamaktadır.**
 
 ---
 
-# 📜 Lisans
+## 📜 Lisans
 
-Bu proje MIT License ile lisanslanmıştır.
-
----
+Bu proje **MIT License** ile lisanslanmıştır. Detaylı bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
 
 ## 👩‍💻 Geliştirici
 
-Şilan Pehlivan
+**Şilan Pehlivan**
