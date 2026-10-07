@@ -2,18 +2,33 @@
 
 # E-Ticaret Ürün Kataloğu
 
-**ASP.NET Core MVC eğitim uygulaması**
+### Ürünleri sade bir web kataloğunda keşfet.
 
-![C#](https://img.shields.io/badge/C%23-2563eb?style=flat-square)
-![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-0891b2?style=flat-square)
-![Razor](https://img.shields.io/badge/Razor-7c3aed?style=flat-square)
-[![MIT License](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)](LICENSE)
+![C#](https://img.shields.io/badge/C%23-2563eb?style=for-the-badge)
+![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-0891b2?style=for-the-badge)
+![Razor](https://img.shields.io/badge/Razor-7c3aed?style=for-the-badge)
+[![MIT](https://img.shields.io/badge/MIT-16a34a?style=for-the-badge)](LICENSE)
 
 Ürünleri bellek içi bir listeden Razor görünümlerine aktaran, MVC veri akışını örnekleyen web uygulaması.
+
+**ASP.NET Core MVC eğitim uygulaması**
+
+[Projeyi keşfet](https://github.com/silanpehlivan/ETicaret/tree/master) · [Kurulum ve ayrıntılar](#projeyi-çalıştırmak-ve-incelemek)
 
 </div>
 
 ---
+
+## İçeride neler var?
+
+- **01** · Model, controller ve view ilişkisi
+- **02** · Ürün adı, fiyatı ve görsellerinin listelenmesi
+- **03** · Bootstrap ile web arayüzü; veritabanı gerektirmez
+
+## Projeyi çalıştırmak ve incelemek
+
+<details>
+<summary><strong>Kurulum, kod yapısı ve teknik notları aç</strong></summary>
 
 ## Öne Çıkanlar
 
@@ -25,23 +40,22 @@
 
 C# · ASP.NET Core MVC · Razor
 
-## Teknik yaklaşım
+### Teknik yaklaşım
 
 Product modeli ve ProductController bellek içi ürün verisini Razor görünümlerine taşır. MVC katmanları arasındaki veri akışı küçük bir katalog örneğiyle gösterilir.
 
-## Kodu incelemeye başlayın
+### Kodu incelemeye başlayın
 
 - [ETicaretProjesi/Controllers/HomeController.cs](ETicaretProjesi/Controllers/HomeController.cs)
 - [ETicaretProjesi/Controllers/ProductController.cs](ETicaretProjesi/Controllers/ProductController.cs)
 - [ETicaretProjesi/Program.cs](ETicaretProjesi/Program.cs)
 - [ETicaretProjesi/Models/ErrorViewModel.cs](ETicaretProjesi/Models/ErrorViewModel.cs)
 
-## Kapsam ve sınırlar
+### Kapsam ve sınırlar
 
 Ürün kataloğu eğitim uygulamasıdır; kalıcı veri, gerçek ödeme ve sipariş yönetimi kapsamına girmez.
 
-<details>
-<summary><strong>Kurulum, kullanım ve teknik ayrıntılar</strong></summary>
+
 
 Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş basit bir e-ticaret uygulamasıdır. Amaç, MVC yapısını öğrenmek ve ürün listeleme mantığını pratik olarak uygulamaktır.
 
@@ -166,6 +180,8 @@ Bu projede **veritabanı kullanılmamaktadır.**
 Ürün verileri doğrudan `ProductController` içerisinde sabit olarak tanımlanmıştır.
 
 ---
+
+
 
 
 </details>
