@@ -25,6 +25,21 @@
 
 C# · ASP.NET Core MVC · Razor
 
+## Teknik yaklaşım
+
+Product modeli ve ProductController bellek içi ürün verisini Razor görünümlerine taşır. MVC katmanları arasındaki veri akışı küçük bir katalog örneğiyle gösterilir.
+
+## Kodu incelemeye başlayın
+
+- [ETicaretProjesi/Controllers/HomeController.cs](ETicaretProjesi/Controllers/HomeController.cs)
+- [ETicaretProjesi/Controllers/ProductController.cs](ETicaretProjesi/Controllers/ProductController.cs)
+- [ETicaretProjesi/Program.cs](ETicaretProjesi/Program.cs)
+- [ETicaretProjesi/Models/ErrorViewModel.cs](ETicaretProjesi/Models/ErrorViewModel.cs)
+
+## Kapsam ve sınırlar
+
+Ürün kataloğu eğitim uygulamasıdır; kalıcı veri, gerçek ödeme ve sipariş yönetimi kapsamına girmez.
+
 <details>
 <summary><strong>Kurulum, kullanım ve teknik ayrıntılar</strong></summary>
 
