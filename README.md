@@ -2,196 +2,31 @@
 
 # E-Ticaret Ürün Kataloğu
 
-### Ürünleri sade bir web kataloğunda keşfet.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=3500&pause=2200&color=38bdf8&background=0D1117&center=true&vCenter=true&width=760&height=76&lines=%C3%9Cr%C3%BCnleri%20sade%20bir%20web%20katalo%C4%9Funda%20ke%C5%9Ffet." alt="Ürünleri sade bir web kataloğunda keşfet." width="760" />
 
-![C#](https://img.shields.io/badge/C%23-2563eb?style=for-the-badge)
-![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-0891b2?style=for-the-badge)
-![Razor](https://img.shields.io/badge/Razor-7c3aed?style=for-the-badge)
-[![MIT](https://img.shields.io/badge/MIT-16a34a?style=for-the-badge)](LICENSE)
+<br />
+
+<img alt="C#" src="https://img.shields.io/badge/C%23-38bdf8?style=for-the-badge" />
+<img alt="ASP.NET Core MVC" src="https://img.shields.io/badge/ASP.NET%20Core%20MVC-2563eb?style=for-the-badge" />
+<img alt="Razor" src="https://img.shields.io/badge/Razor-7c3aed?style=for-the-badge" />
+
+<br /><br />
 
 Ürünleri bellek içi bir listeden Razor görünümlerine aktaran, MVC veri akışını örnekleyen web uygulaması.
 
-**ASP.NET Core MVC eğitim uygulaması**
+<br />
 
-[Projeyi keşfet](https://github.com/silanpehlivan/ETicaret/tree/master) · [Kurulum ve ayrıntılar](#projeyi-çalıştırmak-ve-incelemek)
+**Model, controller ve view ilişkisi** &nbsp; · &nbsp; **Ürün adı, fiyatı ve görsellerinin listelenmesi** &nbsp; · &nbsp; **Bootstrap ile web arayüzü; veritabanı gerektirmez**
+
+<br /><br />
+
+[![Projeyi keşfet](https://img.shields.io/badge/PROJEYİ_KEŞFET-2563eb?style=for-the-badge)](https://github.com/silanpehlivan/ETicaret/tree/master)
+[![Kurulum](https://img.shields.io/badge/KURULUM_&_TEKNİK_NOTLAR-334155?style=for-the-badge)](PROJECT_GUIDE.md)
 
 </div>
 
 ---
 
-## İçeride neler var?
-
-- **01** · Model, controller ve view ilişkisi
-- **02** · Ürün adı, fiyatı ve görsellerinin listelenmesi
-- **03** · Bootstrap ile web arayüzü; veritabanı gerektirmez
-
-## Projeyi çalıştırmak ve incelemek
-
-<details>
-<summary><strong>Kurulum, kod yapısı ve teknik notları aç</strong></summary>
-
-## Öne Çıkanlar
-
-- Model, controller ve view ilişkisi
-- Ürün adı, fiyatı ve görsellerinin listelenmesi
-- Bootstrap ile web arayüzü; veritabanı gerektirmez
-
-## Teknolojiler
-
-C# · ASP.NET Core MVC · Razor
-
-### Teknik yaklaşım
-
-Product modeli ve ProductController bellek içi ürün verisini Razor görünümlerine taşır. MVC katmanları arasındaki veri akışı küçük bir katalog örneğiyle gösterilir.
-
-### Kodu incelemeye başlayın
-
-- [ETicaretProjesi/Controllers/HomeController.cs](ETicaretProjesi/Controllers/HomeController.cs)
-- [ETicaretProjesi/Controllers/ProductController.cs](ETicaretProjesi/Controllers/ProductController.cs)
-- [ETicaretProjesi/Program.cs](ETicaretProjesi/Program.cs)
-- [ETicaretProjesi/Models/ErrorViewModel.cs](ETicaretProjesi/Models/ErrorViewModel.cs)
-
-### Kapsam ve sınırlar
-
-Ürün kataloğu eğitim uygulamasıdır; kalıcı veri, gerçek ödeme ve sipariş yönetimi kapsamına girmez.
-
-
-
-Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş basit bir e-ticaret uygulamasıdır. Amaç, MVC yapısını öğrenmek ve ürün listeleme mantığını pratik olarak uygulamaktır.
-
----
-
-## Proje Hakkında
-
-Bu uygulamada ürünler dinamik olarak bir liste içerisinde tanımlanmış ve kullanıcıya web arayüzü üzerinden sunulmuştur.
-
-Proje kapsamında:
-
-- ASP.NET Core MVC yapısı
-- Controller mantığı
-- View (Razor) kullanımı
-- Model yapısı
-- Statik ürün listeleme (in-memory data)
-
-kullanılmıştır.
-
----
-
-## Teknik Detaylar
-
-| Özellik | Açıklama |
-|---|---|
-| Dil | C# |
-| Framework | ASP.NET Core MVC |
-| Mimari | MVC (Model - View - Controller) |
-| Veritabanı |  Yok (in-memory liste kullanıldı) |
-| Frontend | HTML, CSS, Bootstrap |
-| IDE | Visual Studio 2022 |
-
----
-
-## Kullanılan Teknolojiler
-
-- ASP.NET Core MVC
-- C#
-- Razor Views
-- Bootstrap
-- HTML5 / CSS3
-- MVC Pattern
-
----
-
-## Proje Yapısı
-
-```bash
-ETicaretProjesi/
-│
-├── Controllers/
-│   ├── HomeController.cs
-│   └── ProductController.cs
-│
-├── Models/
-│   ├── Product.cs
-│   └── ErrorViewModel.cs
-│
-├── Views/
-│   ├── Home/
-│   │   ├── Index.cshtml
-│   │   └── Privacy.cshtml
-│   │
-│   ├── Product/
-│   │   └── Index.cshtml
-│   │
-│   └── Shared/
-│       ├── _Layout.cshtml
-│       └── Error.cshtml
-│
-├── wwwroot/
-│   ├── css/
-│   ├── js/
-│   └── lib/
-│
-├── Program.cs
-├── appsettings.json
-└── ETicaretProjesi.csproj
-```
-
----
-
-## Önemli Dosyalar
-
-## ProductController.cs
-Ürünleri listeleyen ve View’a gönderen controller yapısı.
-
-- Ürünler manuel olarak `List<Product>` içinde tanımlanmıştır.
-- Veritabanı kullanılmamıştır.
-
-## HomeController.cs
-- Ana sayfa (Index)
-- Privacy sayfası
-- Error sayfası yönetimi
-
-## Product.cs
-Ürün modelini temsil eder:
-
-- Id
-- Name
-- Price
-- ImageUrl
-- Description
-
----
-
-## Projenin Amacı
-
-Bu proje sayesinde:
-
-- MVC mantığı öğrenilir
-- Controller → View veri aktarımı anlaşılır
-- Model yapısı pratik edilir
-- ASP.NET Core temel seviyede kavranır
-- Basit e-ticaret ürün listeleme sistemi geliştirilir
-
----
-
-## Not
-
-Bu projede **veritabanı kullanılmamaktadır.**  
-Ürün verileri doğrudan `ProductController` içerisinde sabit olarak tanımlanmıştır.
-
----
-
-
-
-
-</details>
-
----
-
 <div align="center">
-
-**© 2025 Şilan PEHLİVAN**
-
-Bu proje MIT lisansı kapsamında sunulmaktadır. Kullanım ve dağıtım koşulları: [LICENSE](LICENSE).
-
+<sub>© 2025 Şilan PEHLİVAN · <a href="LICENSE">MIT lisansı</a></sub>
 </div>
